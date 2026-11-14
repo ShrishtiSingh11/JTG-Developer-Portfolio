@@ -102,6 +102,9 @@ width: 600.83935546875px;}
 .highlight{
     color: #FFB400
 }
+.highlight1{
+    color:#767676;
+}
 
 .shape {
     position: absolute;
@@ -156,4 +159,84 @@ width: 600.83935546875px;}
 .circle1{
     top: 222.15px;
     left: 742.39px;
+}
+
+.logo{
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: left;
+}
+.logo img{
+width: 157.99999868868417px;
+height: 75.9999926090195px;
+object-fit: contain;
+}
+
+.projects {
+    padding: 60px 50px;
+}
+
+.projects h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    position: relative;
+    isolation: isolate;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 256px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-info {
+    padding: 20px;
+font-weight: 500;
+font-size: 16px;
+line-height: 124%;
+letter-spacing: 0%;
+width: 267.25482177734375;
+height: 20.221603393554688;
+top: 16px;
+left: 16.08px;
+opacity: 1;
+
+}
+
+.projects-description {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.project-tags {
+    display: grid;
+    grid-template-columns: repeat(4,max-content);
+    gap: 8px;
+    margin-top: 12px;
+    border: 1px;
+}
+
+.project-tags span {
+    background-color: #EFEFEF;
+    padding: 2px 8px;
+    border-radius: 20px;
+    font-size: 11px;
 }
