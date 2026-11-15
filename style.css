@@ -254,13 +254,20 @@ object-fit: contain;
 .carousel {
     display: flex;
     gap: 25px;
-    overflow: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
 }
 
 .review-card {
-    flex: 0 0 300px;
+    flex: 0 0 calc((100% - 50px) / 3);
     background-color: white;
-    padding: 25px;
+    padding: 20px;
+    scroll-snap-align: start;
 }
 
 .stars img {
@@ -274,7 +281,7 @@ object-fit: contain;
     margin-bottom: 12px;
     width: 133.3px;
     top: 59.8px;
-    color: #2B2B2B;
+    color: #767676;
 }
 
 .review-card > p {
@@ -314,4 +321,125 @@ object-fit: contain;
 .reviewer span{
     font-size: 15px;
     color:#767676;
+}
+
+.carousel {
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #D0D0D0;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #FFB400;
+}
+
+
+
+.contact {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding: 60px 50px;
+}
+
+.contact-form h2,
+.contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #767676;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #F0F0F6;
+    margin-bottom: 20px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 150px;
+    padding: 14px;
+    background: #FFB400;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background: #FFB400;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-details h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.contact-details h5{
+color: #767676;
+}
+.contact-details p {
+    font-size: 13px;
+    color: #767676;
+    margin-bottom: 12px;
 }
