@@ -186,7 +186,7 @@ object-fit: contain;
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0px;
+    gap: 45px;
     position: relative;
     isolation: isolate;
 }
@@ -206,16 +206,6 @@ object-fit: contain;
 
 .project-info {
     padding: 20px;
-font-weight: 500;
-font-size: 16px;
-line-height: 124%;
-letter-spacing: 0%;
-width: 267.25482177734375;
-height: 20.221603393554688;
-top: 16px;
-left: 16.08px;
-opacity: 1;
-
 }
 
 .projects-description {
@@ -231,7 +221,6 @@ opacity: 1;
     grid-template-columns: repeat(4,max-content);
     gap: 8px;
     margin-top: 12px;
-    border: 1px;
 }
 
 .project-tags span {
@@ -239,4 +228,90 @@ opacity: 1;
     padding: 2px 8px;
     border-radius: 20px;
     font-size: 11px;
+}
+
+.recommendations{
+    padding: 60px 50px;
+}
+
+.recommendation-heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.recommendation-heading h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.recommendation-heading p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.carousel {
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+}
+
+.review-card {
+    flex: 0 0 300px;
+    background-color: white;
+    padding: 25px;
+}
+
+.stars img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    gap: 5px;
+}
+.review-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    width: 133.3px;
+    top: 59.8px;
+    color: #2B2B2B;
+}
+
+.review-card > p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #767676;
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.reviewer img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewer h4 {
+    font-size: 14px;
+    text-align: left;
+}
+
+.reviewer-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.reviewer{
+    font-size: 14px;
+}
+.reviewer span{
+    font-size: 15px;
+    color:#767676;
 }
