@@ -540,3 +540,23 @@ color: #767676;
     color: #767676;
     font-size: 13px;
 }
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+        padding: 20px 24px;
+    }
+
+    .logo {
+        flex: 0 0 auto;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+}
+.logo2 {
+    overflow-x: clip;
+}
+
