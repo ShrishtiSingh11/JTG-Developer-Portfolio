@@ -579,3 +579,8 @@ color: #767676;
         height: auto;
     }
 }
+ @media (max-width: 480px){
+    .logo2-content h1{
+        size: 34px;
+    }
+ }
