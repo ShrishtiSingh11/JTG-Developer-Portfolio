@@ -8,78 +8,94 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-display : flex;
-justify-content : space-between;
-align-items : center;
-padding : 20px 50px;
-
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 152px;
+    padding: 38px 96px;
+    background-color: #FFFFFF; 
 }
 
 nav ul {
     display: flex;
+    align-items: center;
+    gap: 13.8px;
     list-style: none;
-    gap: 25px;
-
 }
 
-nav a{
-    text-decoration: none;
-    color: #000000;
+nav a {
+    display: inline-block;
+    padding: 10px 14px;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
-} 
+    line-height: 17px;     
+    color: #000;
+    
+    text-decoration: none;
+}
+
+nav a.active {
+    background-color: #FFB400;
+    border-radius:5px;
+}
+
+ 
 
 .logo2 {
+  width: 100%;
+    height: 630px;
+    align-items: flex-start;   
+    width: 100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 60px 50px;
+padding: 60px 98px;
 gap: 40px;
 position: relative;
 }
+
 
 .logo2-content {
     flex: 0 0 40%;
     min-width: 0;
 }
 
+.logo2-image img {
+    width: 808.01px;
+    max-width: 650px;
+    height: 550.41px;
+    object-fit: contain;
+}
+
+
 .logo2-image {
     flex: 1;
     min-width: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-
-.logo2-image img{
-    width: 808.0055541992188px;
-    max-width: 650px;
-    height: 550.4068603515625px;
-    object-fit: contain;
-    top: 231.59px;
-    left: 631.68px;
-}
-
 .logo2-content h1 {
     font-size: 48px;
     font-weight: 700;
-    line-height: 124%;
-    letter-spacing: 0%;
-font-family: 'Inter', sans-serif;
-top:277px;
+    font-family: 'Inter', sans-serif;
+    max-width: 100%;
+height: 210px;
+top: 277px;
 left: 98.27px;
-height: 160px;
-width: 721.687744140625px;}
+}
+
 
 .logo2-content p {
     font-size: 16px;
     line-height: 24px;
     margin-top: 20px;
-    letter-spacing: 0%;
     font-weight: 400;
- top:460.93px;
-left: 98.27px;
-height: 118.71520233154297px;
-width: 600.83935546875px;}
+    max-width: 600px;
+     width: 100%; 
+}
 
 
 .hire-btn {
@@ -162,15 +178,14 @@ width: 600.83935546875px;}
 }
 
 .logo{
-    flex: 1;
     min-width: 0;
     display: flex;
-    justify-content: left;
+    flex: none;
 }
-.logo img{
-width: 157.99999868868417px;
-height: 75.9999926090195px;
-object-fit: contain;
+.logo img {
+    width: 158px;
+    height: 76px;
+    object-fit: contain;
 }
 
 .projects {
@@ -264,7 +279,7 @@ object-fit: contain;
 }
 
 .review-card {
-    flex: 0 0 calc((100% - 50px) / 3);
+    flex: 0 0 31%;
     background-color: white;
     padding: 20px;
     scroll-snap-align: start;
@@ -540,25 +555,10 @@ color: #767676;
     color: #767676;
     font-size: 13px;
 }
-@media (max-width: 768px) {
-    header {
-        flex-wrap: wrap;
-        gap: 12px 20px;
-        padding: 20px 24px;
-    }
 
-    .logo {
-        flex: 0 0 auto;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-        gap: 12px 20px;
-    }
-}
-.logo2 {
+/* .logo2 {
     overflow-x: clip;
-}
+} */
 @media (max-width: 1100px) {
     .rectangle-yellow {left: auto; right:4%; top:8%;}
     .triangle         {left: auto; right:3%; top:auto; bottom:6%;}
@@ -579,8 +579,77 @@ color: #767676;
         height: auto;
     }
 }
- @media (max-width: 480px){
-    .logo2-content h1{
-        size: 34px;
+
+.menu-btn{
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+img{ max-width: 100%; }
+
+@media (max-width: 1024px){
+    .logo2{ padding: 40px; }
+    .logo2-content h1{ font-size: 38px; }
+    .project-grid{ grid-template-columns: repeat(2, 1fr); gap: 30px; }
+    .review-card{ flex: 0 0 48%; }
+    .contact{ grid-template-columns: 1fr; }
+    .footer-content{ grid-template-columns: 1fr 1fr; }
+}
+
+
+@media (max-width: 768px){
+    header{
+        position: relative;
+        padding: 20px 24px;
     }
- }
+    .menu-btn{ display: block; }
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+        gap: 0px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 15px 24px;
+        box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+        z-index: 10;
+    }
+    nav ul.show{ display: flex; }
+
+    .logo2{ flex-direction: column; text-align: center; padding: 40px 20px 0; }
+    .logo2-content{ flex: none; width: 100%; }
+    .logo2-content h1{ font-size: 30px; }
+    .shape{ display: none; }
+
+    .projects,
+    .recommendations,
+    .contact,
+    .footer{ padding-left: 20px; padding-right: 20px; }
+
+    .project-grid{ grid-template-columns: 1fr; }
+    .project-tags{ display: flex; flex-wrap: wrap; }
+
+    .projects h2,
+    .recommendation-heading h2,
+    .contact-form h2,
+    .contact-info h2{ font-size: 24px; }
+
+    .review-card{ flex: 0 0 280px; padding: 18px; }
+
+    .partner-logos{ flex-wrap: wrap; gap: 20px; }
+    .partner-logos img{ width: 110px; height: auto; }
+
+    .footer-content{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px){
+    .logo2-content h1{
+        font-size: 24px;
+    }
+}
