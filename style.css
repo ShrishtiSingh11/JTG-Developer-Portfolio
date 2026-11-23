@@ -216,19 +216,19 @@ overflow: hidden;
 
 
 .projects {
-    padding: 60px 50px;
+    padding: 60px 96px 0;
 }
 
 .projects h2 {
     font-size: 32px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     text-align: center;
 }
 
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 45px;
+    gap: 40px;
     position: relative;
     isolation: isolate;
 }
@@ -237,6 +237,7 @@ overflow: hidden;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
+     box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
 
 .project-card img {
@@ -247,38 +248,53 @@ overflow: hidden;
 }
 
 .project-info {
-    padding: 20px;
+    padding: 15px 15px 19px;
 }
+.project-info h3{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.project-info p{
+    font-size: 14px;
+    line-height: 24px ;
+ text-transform: capitalize;
+}
+
 
 .projects-description {
     text-align: center;
-    font-size: 14px;
-    line-height: 20px;
-    max-width: 700px;
-    margin: 0 auto 30px;
+    font-size: 15px;
+    line-height: 24px;
+    max-width: 650px;
+    margin: 0 auto 41px;
+       color: #767676;
+    text-transform: capitalize;
 }
 
 .project-tags {
     display: grid;
     grid-template-columns: repeat(4,max-content);
     gap: 8px;
-    margin-top: 12px;
+    margin-top: 9px;
 }
 
 .project-tags span {
+    border: 1px solid #DADADA;
     background-color: #EFEFEF;
-    padding: 2px 8px;
+    padding: 5px 16px;
     border-radius: 20px;
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .recommendations{
-    padding: 60px 50px;
+    padding: 60px 96px 0;
 }
 
 .recommendation-heading{
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .recommendation-heading h2 {
@@ -670,6 +686,11 @@ color: #767676;
         font-size: 24px;
     }
 }
+
+
+
+
+
 
 
 
