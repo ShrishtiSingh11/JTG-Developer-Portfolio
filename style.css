@@ -58,6 +58,7 @@ nav a.active {
 .logo{
     display: flex;
     flex: none;
+    min-width: 0;
 }
 .logo img {
     width: 158px;
@@ -68,15 +69,21 @@ nav a.active {
 .logo2 {   
     width: 100%;
 display: flex;
+min-height: 630px;
+justify-content: space-between;
 align-items: center;
 padding: 60px 98px;
 position: relative;
+gap:40px;
+background-color: white;
+overflow: hidden;
 }
 
 
 .logo2-content {
     flex: 0 0 500px;
     min-width: 0;
+    padding-top: 8px;
     position:relative;
     z-index:2;
 }
@@ -91,6 +98,10 @@ position: relative;
 
 
 .logo2-image {
+     position: absolute;
+    right: 0;
+    bottom: 0;
+    width: min(808px, 56vw);
     flex: 1;
     min-width: 0;
     display: flex;
@@ -100,10 +111,10 @@ position: relative;
 .logo2-content h1 {
     font-size: 48px;
     font-weight: 700;
-    line-height: 124%;
+    line-height: 58px;
     font-family: 'Inter', sans-serif;
     max-width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 67px;
 }
 
 
@@ -112,9 +123,10 @@ position: relative;
     color: #767676;
     text-transform: capitalize;
     line-height: 24px;
-    margin-bottom: 10px;
+    margin-top: 0px;
     font-weight: 400;
-     width: 600.84px; 
+    max-width: 600px;
+     width: 100%; 
 }
 
 
@@ -124,7 +136,7 @@ position: relative;
     justify-content: center;
     width: 154px;
     height: 51px;
-    margin-top: 110px;
+    margin-top: 104px;
     background-color: #FFB400;
     color: #000;
     text-decoration: none;
@@ -142,6 +154,7 @@ position: relative;
 
 .shape {
     position: absolute;
+    z-index: 3;
 }
 
 .rectangle-blue {
@@ -171,30 +184,35 @@ position: relative;
     position: absolute;
 }
 .rectangle-blue {
-    top: 601.23px;
+    top: 449.23px;
     left: 533.75px;
 }
 
 .rectangle-yellow {
-    top: 245.97px;
+    top: 93.97px;
     left: 1278.16px;
 }
 
 .circle2{
-    top: 721.29px;
+    top: 569.29px;
     left: 125.89px;
 }
 
 .triangle {
-    top: 728.04px;
+    top: 576.04px;
     left: 1314.64px;
 }
 
 .circle1{
-    top: 222.15px;
+    top: 70.15px;
     left: 742.39px;
 }
 
+.circle3{
+    top: 39px;
+    left: 57px;
+    border-color: #FFB400CC;
+}
 
 
 .projects {
@@ -652,8 +670,6 @@ color: #767676;
         font-size: 24px;
     }
 }
-
-
 
 
 
