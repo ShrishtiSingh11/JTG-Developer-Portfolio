@@ -54,32 +54,39 @@ nav a.active {
     color: #000;
     text-decoration: none;
 }
- 
 
-.logo2 {
-  width: 100%;
-    height: 630px;
-    align-items: flex-start;   
+.logo{
+    display: flex;
+    flex: none;
+}
+.logo img {
+    width: 158px;
+    height: 76px;
+    object-fit: contain;
+}
+ 
+.logo2 {   
     width: 100%;
 display: flex;
-justify-content: space-between;
 align-items: center;
 padding: 60px 98px;
-gap: 40px;
 position: relative;
 }
 
 
 .logo2-content {
-    flex: 0 0 40%;
+    flex: 0 0 500px;
     min-width: 0;
+    position:relative;
+    z-index:2;
 }
 
 .logo2-image img {
-    width: 808.01px;
-    max-width: 650px;
-    height: 550.41px;
+    width: 100%;
+    max-width: none;
+    display:block;
     object-fit: contain;
+    height: auto;
 }
 
 
@@ -93,21 +100,21 @@ position: relative;
 .logo2-content h1 {
     font-size: 48px;
     font-weight: 700;
+    line-height: 124%;
     font-family: 'Inter', sans-serif;
     max-width: 100%;
-height: 210px;
-top: 277px;
-left: 98.27px;
+    margin-bottom: 50px;
 }
 
 
 .logo2-content p {
     font-size: 16px;
+    color: #767676;
+    text-transform: capitalize;
     line-height: 24px;
-    margin-top: 20px;
+    margin-bottom: 10px;
     font-weight: 400;
-    max-width: 600px;
-     width: 100%; 
+     width: 600.84px; 
 }
 
 
@@ -117,15 +124,13 @@ left: 98.27px;
     justify-content: center;
     width: 154px;
     height: 51px;
-    margin-top: 25px;
+    margin-top: 110px;
     background-color: #FFB400;
     color: #000;
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
     border-radius: 5px;
-    top: 613.37px;
-    left: 98.27px;
 }
 
 .highlight{
@@ -190,16 +195,7 @@ left: 98.27px;
     left: 742.39px;
 }
 
-.logo{
-    min-width: 0;
-    display: flex;
-    flex: none;
-}
-.logo img {
-    width: 158px;
-    height: 76px;
-    object-fit: contain;
-}
+
 
 .projects {
     padding: 60px 50px;
